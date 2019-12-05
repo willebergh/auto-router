@@ -1,6 +1,6 @@
 {
   "name": "@willebergh/auto-router",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple express.js middleware that automatically loads all .js files in a directory recursively to the express router",
   "main": "./lib/index.js",
   "scripts": {
