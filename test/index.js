@@ -4,9 +4,16 @@ const app = express();
 
 console.clear();
 
-app.use(autoRouter("api"))
+app.use(autoRouter({
+    routes: "api",
+    baseRoute: "/api"
+}))
 
-app.listen(3000, () => {
+app.use("/", (req, res, next) => {
+    console.log(next)
+})
+
+app.listen(3001, () => {
     console.log("ok")
-    process.exit();
+    //process.exit();
 })

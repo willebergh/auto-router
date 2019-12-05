@@ -16,6 +16,7 @@ npm install @willebergh/auto-router
 const options = {
     routes: "./src/routes",             // Path to the directory with all routes
     logging: "silent" || "verbose",     // How much to log to the console
+    baseRoute: "/api"                   // The base route of the autoRouter
 }
 ```
 
@@ -33,6 +34,7 @@ app.use(autoRouter("./src/routes"));
 app.use(autoRouter({
     routes: "./src/routes",             // Path to the directory with all routes
     logging: "silent" || "verbose",     // How much to log to the console
+    baseRoute: "/api"                   // The base route of the autoRouter
 }));
 
 const port = process.env.PORT || 3000;
