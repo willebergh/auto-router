@@ -1,15 +1,28 @@
 {
-  "name": "express-auto-router",
+  "name": "auto-router",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple express.js middleware that automatically loads all .js files in a directory recursively to the express router",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "William Bergh",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willebergh/auto-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/willebergh/auto-router/issues"
+  },
+  "homepage": "https://github.com/willebergh/auto-router#readme"
 }
